@@ -57,3 +57,35 @@ export default {
 }
 </script>
 ```
+
+If you are using Composition API:
+```js
+const _mounted = ref(false)
+onMounted(() => {
+    _mounted.value = true
+})
+onUnmounted(() => {
+    _mounted.value = false
+})
+// OR
+const _mounted = reactive(false)
+onMounted(() => {
+    _mounted = true
+})
+onUnmounted(() => {
+    _mounted = false
+})
+
+dataAPI.onMethod({ _mounted }, 'methodName', (data) => {
+    console.log(data)
+})
+```
+
+## API
+```js
+dataAPI.onMethod(componentThis, methodName, callback, options?)
+// options: { once: boolean }
+dataAPI.callMethod(methodName, ...data?)
+dataAPI.offMethodCallback(methodName, callback)
+dataAPI.offMethod(methodName)
+```
