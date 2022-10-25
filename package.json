@@ -1,6 +1,7 @@
 {
   "name": "vue-data-api",
   "version": "1.0.0",
+  "repository": "matvejs16/vue-data-api",
   "description": "dataAPI for Vue3",
   "main": "index.js",
   "scripts": {
