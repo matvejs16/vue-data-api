@@ -1,12 +1,22 @@
 {
   "name": "vue-data-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": "matvejs16/vue-data-api",
   "description": "dataAPI for Vue3",
-  "main": "index.js",
+  "main": "dist/vue-data-api.min.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp"
   },
   "author": "Matvej Makushin <matvejs16@gmail.com>",
-  "license": "GPL-3.0"
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "@babel/core": "^7.19.6",
+    "@babel/preset-env": "^7.19.4",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2"
+  }
 }
