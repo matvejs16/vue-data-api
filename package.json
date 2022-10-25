@@ -1,0 +1,11 @@
+{
+  "name": "vue-data-api",
+  "version": "1.0.0",
+  "description": "dataAPI for Vue3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matvej Makushin <matvejs16@gmail.com>",
+  "license": "GPL-3.0"
+}
