@@ -7,7 +7,7 @@
   "scripts": {
     "build": "gulp"
   },
-  "author": "Matvej Makushin <74150728+matvejs16@users.noreply.github.com>",
+  "author": "Matvej Makushin <matvejs16@genrem.eu>",
   "license": "GPL-3.0",
   "devDependencies": {
     "@babel/core": "^7.19.6",
