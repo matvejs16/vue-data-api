@@ -52,7 +52,7 @@ import dataAPI from 'vue-data-api'
 export default {
     name: 'Child',
     mounted() {
-        dataAPI.callMethod(this, 'methodName', 'Hello World') // It will log 'Hello World' in the console
+        dataAPI.callMethod('methodName', 'Hello World') // It will log 'Hello World' in the console
     }
 }
 </script>
