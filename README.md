@@ -67,16 +67,8 @@ onMounted(() => {
 onUnmounted(() => {
     _mounted.value = false
 })
-// OR
-const _mounted = reactive(false)
-onMounted(() => {
-    _mounted = true
-})
-onUnmounted(() => {
-    _mounted = false
-})
 
-dataAPI.onMethod({ _mounted }, 'methodName', (data) => {
+dataAPI.onMethod({ _mounted: _mounted.value }, 'methodName', (data) => {
     console.log(data)
 })
 ```
