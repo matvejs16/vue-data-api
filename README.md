@@ -56,7 +56,7 @@ export default {
     }
 }
 </script>
-``` 
+```
 
 If you are using Composition API:
 ```js
