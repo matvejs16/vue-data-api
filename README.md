@@ -60,15 +60,15 @@ export default {
 
 If you are using Composition API:
 ```js
-const _mounted = ref(false)
+const mountedObj = reactive({ _mounted: false })
 onMounted(() => {
-    _mounted.value = true
+    mountedObj._mounted = true
 })
 onUnmounted(() => {
-    _mounted.value = false
+    mountedObj._mounted = false
 })
 
-dataAPI.onMethod({ _mounted: _mounted.value }, 'methodName', (data) => {
+dataAPI.onMethod(mountedObj, 'methodName', (data) => {
     console.log(data)
 })
 ```
